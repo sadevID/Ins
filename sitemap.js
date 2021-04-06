@@ -186,7 +186,7 @@ function displayToc(filter) {
    var tocTool1 = 'Klik untuk mengurutkan berdasarkan Judul';
    var tocHead2 = 'Tanggal';
    var tocTool2 = 'Klik untuk mengurutkan berdasarkan Tanggal';
-   var tocHead3 = 'Katogori';
+   var tocHead3 = 'Kategori';
    var tocTool3 = '';
    if (sortBy == "titleasc") { 
       tocTool1 += ' (descending)';
@@ -233,9 +233,9 @@ function displayToc(filter) {
    }
    tocTable += '</table>';
    if (numDisplayed == postTitle.length) {
-      var tocNote = '<span class="toc-note">Displaying all ' + postTitle.length + ' posts<br/></span>'; }
+      var tocNote = '<span class="toc-note">Tampilkan Semua ' + postTitle.length + ' <br/></span>'; }
    else {
-      var tocNote = '<span class="toc-note">Displaying ' + numDisplayed + ' posts labeled \'';
+      var tocNote = '<span class="toc-note">Menampilkan ' + numDisplayed + ' kategori \'';
       tocNote += postFilter + '\' of '+ postTitle.length + ' posts total<br/></span>';
    }
    tocdiv.innerHTML = tocNote + tocTable;
